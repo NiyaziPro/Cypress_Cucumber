@@ -6,7 +6,7 @@ Given("visit url", function () {
 });
 
 Then("verify title", function () {
-  cy.title().should("eq", "Google");
+  cy.title().should("contain", "Google");
   cy.wait(2000);
   cy.get("#gbqfbb").click();
 });

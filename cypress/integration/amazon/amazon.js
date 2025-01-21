@@ -5,5 +5,5 @@ Given("go", function () {
 });
 
 Then("verify amazon url", function () {
-  cy.url().should("include.text", "amazon")
+  cy.title().should("contain", "Amazon")
 });
